@@ -68,7 +68,9 @@
     <Compile Include="02_PrescriptionForm.Designer.cs">
       <DependentUpon>02_PrescriptionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientControl.cs" />
+    <Compile Include="PatientControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="PatientControl.Designer.cs">
       <DependentUpon>PatientControl.cs</DependentUpon>
     </Compile>
