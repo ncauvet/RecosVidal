@@ -1,6 +1,6 @@
 ﻿namespace JourneeEditteurRecos
 {
-    partial class InitForm
+    partial class SearchForm
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -30,9 +30,17 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.RecosListPanel = new System.Windows.Forms.GroupBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.RecosListPanel.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -48,6 +56,8 @@
             // RecosListPanel
             // 
             this.RecosListPanel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.RecosListPanel.Controls.Add(this.listBox2);
+            this.RecosListPanel.Controls.Add(this.listBox1);
             this.RecosListPanel.Location = new System.Drawing.Point(451, 12);
             this.RecosListPanel.Name = "RecosListPanel";
             this.RecosListPanel.Size = new System.Drawing.Size(243, 858);
@@ -55,15 +65,47 @@
             this.RecosListPanel.TabStop = false;
             this.RecosListPanel.Text = "RecosListPanel";
             // 
+            // listBox2
+            // 
+            this.listBox2.DisplayMember = "name";
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(17, 19);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(220, 290);
+            this.listBox2.TabIndex = 1;
+            this.listBox2.ValueMember = "name";
+            this.listBox2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox2_MouseDoubleClick);
+            // 
+            // listBox1
+            // 
+            this.listBox1.DisplayMember = "name";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(17, 333);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(220, 511);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.ValueMember = "name";
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.LightCoral;
+            this.groupBox2.Controls.Add(this.webBrowser1);
             this.groupBox2.Location = new System.Drawing.Point(700, 345);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(877, 525);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RecosPanel";
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(3, 16);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(871, 506);
+            this.webBrowser1.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -78,6 +120,8 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.LightBlue;
+            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Location = new System.Drawing.Point(700, 16);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(877, 200);
@@ -85,7 +129,24 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "SearchPanel";
             // 
-            // FullForm
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(444, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "SearchRcosByName";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(22, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(416, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,8 +156,12 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
-            this.Name = "FullForm";
+            this.Name = "SearchForm";
             this.Text = "Form1";
+            this.RecosListPanel.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -108,6 +173,11 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 

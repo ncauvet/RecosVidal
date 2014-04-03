@@ -15,7 +15,9 @@ namespace JourneeEditteurRecos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FullForm());
+            //Application.Run(new FullForm());
+            //Application.Run(new SearchForm());
+            Application.Run(new PrescriptionForm());
         }
     }
 }

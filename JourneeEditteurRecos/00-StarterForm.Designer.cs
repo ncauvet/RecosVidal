@@ -1,6 +1,6 @@
 ﻿namespace JourneeEditteurRecos
 {
-    partial class InitForm
+    partial class StarterForm
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace JourneeEditteurRecos
 {
-    public partial class InitForm : Form
+    public partial class StarterForm : Form
     {
         static VidalAPI.ProductLine vidalProduct = VidalAPI.ProductLine.GetProduct(VidalAPI.ProductLineID.VIDALEXPERT_PRODUCTID);
-        public InitForm()
+        public StarterForm()
         {
             InitializeComponent();
             //patientControl.setVidalProduct(vidalProduct);

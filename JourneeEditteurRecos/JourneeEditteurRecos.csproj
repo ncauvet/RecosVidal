@@ -50,6 +50,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01_SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_SearchForm.Designer.cs">
+      <DependentUpon>01_SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00-StarterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00-StarterForm.Designer.cs">
+      <DependentUpon>00-StarterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_PrescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_PrescriptionForm.Designer.cs">
+      <DependentUpon>02_PrescriptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientControl.cs" />
+    <Compile Include="PatientControl.Designer.cs">
+      <DependentUpon>PatientControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="StarterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,22 +84,25 @@
     <Compile Include="FullForm.Designer.cs">
       <DependentUpon>FullForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PatientControl.Designer.cs">
-      <DependentUpon>PatientControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="01_SearchForm.resx">
+      <DependentUpon>01_SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00-StarterForm.resx">
+      <DependentUpon>00-StarterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_PrescriptionForm.resx">
+      <DependentUpon>02_PrescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientControl.resx">
+      <DependentUpon>PatientControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StarterForm.resx">
       <DependentUpon>StarterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FullForm.resx">
       <DependentUpon>FullForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PatientControl.resx">
-      <DependentUpon>PatientControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
