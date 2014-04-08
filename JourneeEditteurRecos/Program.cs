@@ -18,6 +18,7 @@ namespace JourneeEditteurRecos
             //Application.Run(new FullForm());
             //Application.Run(new SearchForm());
             Application.Run(new PrescriptionForm());
+            //Application.Run(new StarterForm());
         }
     }
 }

@@ -74,12 +74,6 @@
     <Compile Include="PatientControl.Designer.cs">
       <DependentUpon>PatientControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="StarterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StarterForm.Designer.cs">
-      <DependentUpon>StarterForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="FullForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,9 +93,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PatientControl.resx">
       <DependentUpon>PatientControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StarterForm.resx">
-      <DependentUpon>StarterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FullForm.resx">
       <DependentUpon>FullForm.cs</DependentUpon>
